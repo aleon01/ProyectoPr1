@@ -1,0 +1,168 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Controller/Administrador/Administrador.master.cs" Inherits="View_Administrador" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<style type="text/css">
+		.auto-style1 {
+			width: 100%;
+		}
+		.auto-style2 {
+			width: 176px;
+		}
+		.auto-style4 {
+			height: 118px;
+		}
+		.auto-style5 {
+			font-weight: 300;
+			width: 176px;
+		}
+		.auto-style6 {
+			width: 110px;
+		}
+		.auto-style7 {
+			font-weight: 300;
+			width: 110px;
+		}
+		.auto-style8 {
+			width: 110px;
+			height: 15px;
+		}
+		.auto-style9 {
+			width: 176px;
+			height: 15px;
+		}
+		.auto-style10 {
+			height: 15px;
+		}
+		.auto-style11 {
+			width: 174px;
+		}
+		.auto-style14 {
+			font-weight: bold;
+		}
+		.auto-style15 {
+			text-align: left;
+			width: 174px;
+			height: 20px;
+		}
+		.auto-style16 {
+			text-align: left;
+			width: 174px;
+		}
+	</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+		<table class="auto-style1">
+			<tr>
+				<td class="auto-style8"></td>
+				<td class="auto-style9"></td>
+				<td class="auto-style10"></td>
+			</tr>
+			<tr>
+				<td class="auto-style7">&nbsp;</td>
+				<td class="auto-style5"><strong class="auto-style14">Bienvenido ADMI</strong></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style7">&nbsp;</td>
+				<td class="auto-style5">&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style6" style="margin-left: 40px;">
+					&nbsp;</td>
+				<td style="margin-left: 40px;">
+					<table class="w-100">
+						<tr>
+							<td class="auto-style11">
+								<asp:LinkButton ID="LB_Servicios" runat="server">Servicios</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style16">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<asp:LinkButton ID="LB_RegistrarS" runat="server" OnClick="LB_Registrar_Click">Registrar</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style15">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<asp:LinkButton ID="LB_VisualizarS" runat="server" OnClick="LB_VisualizarS_Click">Visualizar</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style11">
+								<asp:HyperLink ID="HyperLink4" runat="server">Empleado</asp:HyperLink>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style16">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<asp:LinkButton ID="LB_RegEmp" runat="server" OnClick="LB_Registrar_Click">Registrar</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style15">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<asp:LinkButton ID="LB_VisualizarEmp" runat="server" OnClick="LB_Registrar_Click">Visualizar</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style15">
+								<asp:LinkButton ID="LB_AsignarFun" runat="server">Asignar Funciones</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
+							<td class="auto-style11">
+								&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="auto-style11">
+								<asp:LinkButton ID="LB_CerrarS" runat="server" OnClick="LB_CerrarS_Click">Cerrar Session</asp:LinkButton>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td class="auto-style4">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    			</td>
+			</tr>
+			<tr>
+				<td class="auto-style6">
+					&nbsp;</td>
+				<td class="auto-style2">
+					&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style6">
+					&nbsp;</td>
+				<td class="auto-style2">
+					&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style7">&nbsp;</td>
+				<td class="auto-style5"><strong class="auto-style14">Woodland Green Life</strong></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		<br />
+		<br />
+		<br />
+    </div>
+    </form>
+</body>
+</html>

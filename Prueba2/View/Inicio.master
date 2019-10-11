@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Controller/Inicio.master.cs" Inherits="View_Inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<style type="text/css">
+		.auto-style10 {
+			text-align: center;
+			width: 182px;
+		}
+		.auto-style14 {
+			text-align: center;
+			width: 343px;
+		}
+		.auto-style15 {
+			font-weight: 300;
+			text-align: center;
+			font-size: xx-large;
+		}
+		.auto-style16 {
+			font-weight: bold;
+		}
+		.auto-style17 {
+			text-align: center;
+			width: 169px;
+		}
+		.auto-style18 {
+			text-align: center;
+			width: 171px;
+		}
+		.auto-style19 {
+			color: #009900;
+		}
+		</style>
+</head>
+<body style="width: 1350px; height: 793px; margin-right: 0;">
+    <form id="form1" runat="server">
+    <div class="text-center">
+        <br />
+		<table class="w-100">
+			<tr>
+				<td class="auto-style14">&nbsp;</td>
+				<td class="auto-style15" colspan="4"><strong class="auto-style16">WOODLAND GREEN LIFE</strong></td>
+				<td class="text-center">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style14">&nbsp;</td>
+				<td class="auto-style17">
+					&nbsp;</td>
+				<td class="auto-style18">&nbsp;</td>
+				<td class="auto-style10">&nbsp;</td>
+				<td class="auto-style10">&nbsp;</td>
+				<td class="text-center">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style14">&nbsp;</td>
+				<td class="auto-style17">
+					<asp:LinkButton ID="LB_Inicio" runat="server" CssClass="auto-style19" OnClick="LB_Inicio_Click">Inicio</asp:LinkButton>
+					</td>
+				<td class="auto-style18"><asp:LinkButton ID="LB_Servicios" runat="server" CssClass="auto-style19" OnClick="LB_Servicios_Click">Servicios</asp:LinkButton>
+					</td>
+				<td class="auto-style10"><asp:LinkButton ID="LB_Contactenos" runat="server" CssClass="auto-style19" OnClick="LB_Contactenos_Click">Contactenos</asp:LinkButton>
+					</td>
+				<td class="auto-style10"><asp:LinkButton ID="LB_InicioS" runat="server" CssClass="auto-style19" OnClick="LB_InicioS_Click">Iniciar Sesion</asp:LinkButton>
+				</td>
+				<td class="text-center">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style14">&nbsp;</td>
+				<td class="auto-style17">
+					&nbsp;</td>
+				<td class="auto-style18">&nbsp;</td>
+				<td class="auto-style10">&nbsp;</td>
+				<td class="auto-style10">&nbsp;</td>
+				<td class="text-center">&nbsp;</td>
+			</tr>
+		</table>
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    	<asp:Panel ID="Panel1" runat="server">
+		</asp:Panel>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<asp:Panel ID="Panel2" runat="server" CssClass="bg-white">
+			<div class="text-center">
+				<strong>Universidad de Cundinamarca- Ing. Software<br /> Leidy Dayan Villamizar - Leidy Daniela Rodriguez - Anyi Paola Leon</strong></div>
+		</asp:Panel>
+    </form>
+</body>
+</html>
